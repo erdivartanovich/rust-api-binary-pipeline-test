@@ -1,0 +1,24 @@
+[package]
+name = "list_dir_app"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+urlencoding = "2.1.3"
+
+[[bin]]
+name = "list_dir_api"
+path = "src/main.rs"
+
+[[bin]]
+name = "list_dir"
+path = "src/list_dir.rs"
+
+[[bin]]
+name = "actix_api"
+path = "src/actix_api.rs"
+
+[target.x86_64-unknown-linux-musl]
